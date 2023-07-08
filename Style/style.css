@@ -1,0 +1,208 @@
+/* retira qualquer margin ou padding que elementos tenham por padrão */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, Helvetica, "Trebuchet MS", sans-serif;
+	background: rgb(25,25,25) url(../Images/estrelas_1280.jpg);
+}
+
+/* footer */
+#rodape {
+	clear: both;
+	min-height: 100px;
+	text-align: center;
+	color: white;
+	font-size: 15px;
+	padding-top: 30px;
+}
+/* conteiner do header e do main(principal) */
+#conteiner {
+	margin: 15px auto;
+	width: 725px;
+	min-height: 800px;
+}
+
+/* Formatação do header do index*/
+#header {
+	width: 100%;
+	height: 220px;
+	text-align: center;
+	padding-top: 60px;
+}
+
+#programador h1{
+	font-weight: bolder;
+	font-size: 65px;
+	color: white;
+}
+
+#nome {
+	font-size: 32px;
+	color: white;
+	margin-top: 10px;
+}
+/* Fim do header do index*/
+
+/* Formatação do menu */
+#menu {
+	float: left;
+	text-align: center;
+	margin-top: 20px;
+	font-size: 25px;
+}
+
+#menu ul {
+	float: left;
+	list-style: none;
+}
+
+#menu ul li {
+	float: left;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+}
+
+#menu ul li:before {
+	position: absolute;
+}
+
+body.saibaSobreMim #menu a.saibaSobreMim,
+body.formacao #menu a.formacao,
+body.contato #menu a.contato,
+body.portifolio #menu a.portifolio {
+	color: black;
+	background: white;
+}
+/* Fim do menu */
+
+/* Formatação dos links do menu */
+#menu ul li a {
+	display: block;
+	padding: 22px 30px;
+}
+
+#menu ul li a:hover {
+	color: black;
+	background: white;
+}
+/* Fim da formatação dos links de menu */
+
+/* Formatação de links */
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	color: lightgray;
+}
+/* Fim da formatação de links */
+
+/* Botão de voltar */
+#voltar {
+	font-size: 20px;
+	position: absolute;
+	top: 20px;
+	left: 30px;
+}
+/* conteúdo principal das paginas */
+#main {
+	padding: 20px;
+	color: white;
+}
+
+/* Formatação da página saiba sobre mim */
+.sobreMim#main h2 {
+	padding-left: 20px;
+	font-size: 30px;
+}
+
+.sobreMim#main p {
+	padding-top: 20px;
+	font-size: 20px;
+	text-align: justify;
+}
+/* Fim da formatação da pagina saiba sobre mim */
+
+/* Formatação da página formação */
+.cursos#main h2 {
+	padding-left: 20px;
+	font-size: 30px;
+}
+
+.cursos#main span {
+	font-weight: bolder;
+}
+
+.cursos#main p {
+	padding-top: 4px;
+	font-size: 21px;
+}
+/* Fim da formatação da página formação */
+
+/* Formatação da página de portifólio */
+.projetos#main h2 {
+	padding-left: 20px;
+	font-size: 30px;
+}
+
+.projetos#main p {
+	padding-top: 4px;
+	font-size: 22px;
+	text-align: justify;
+}
+
+.projetos#main a {
+	color: gray;
+}
+
+.projetos#main a:hover {
+	color: lightgray;
+}
+/* Fim da formatação da página portifólio */
+
+/* Começo da formatação da página de contato */
+.contato#main h2 {
+	padding-left: 20px;
+	padding-bottom: 30px;
+	font-size: 30px;
+}
+
+.contato#main input {
+	display: block;
+	width: 350px;
+	height: 30px;
+	padding-left: 5px;
+	border: 0;
+	border-radius: 10px;
+	/*box-shadow:0 0 15px 4px rgba(0,0,0,0.1);*/
+}
+
+.contato#main textarea#fMensagem{
+	height: 100px;
+	width: 400px;
+	padding-left: 5px;
+	padding-top: 5px;
+	border: 0;
+	border-radius: 11px;
+	margin-bottom: 25px;
+}
+
+.contato#main input#fEnviar {
+	margin: 0 auto;
+	width: 150px;
+	height: 30px;
+}
+
+.contato#main input#fEnviar:hover {
+	background: lightgray;
+	cursor: pointer;
+}
+/* Fim da formatação da página de contato */
+
+.separado {
+	margin-bottom: 25px;
+}
